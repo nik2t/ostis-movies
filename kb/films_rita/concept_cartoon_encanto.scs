@@ -1,0 +1,116 @@
+concept_cartoon_encanto
+	<- sc_node_not_relation;
+	<-concept_PG6;
+
+=> nrel_main_idtf:[мультфильм Энканто] (* <- lang_ru;; *);
+=> nrel_idtf:[cartoon Encanto] (* <- lang_en;; *);
+=> nrel_idtf:[Encanto] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	 <- definition;;
+	=> nrel_main_idtf:
+		[Высказывание (мультфильм Энканто)] (* <- lang_ru;; *);
+		[Statement(cartoon Encanto)](* <- lang_en;; *);; 
+	<= nrel_sc_text_translation:... 
+		(*
+		-> example:[<b><sc_element sys_idtf="concept_cartoon_encanto">Энканто</sc_element></b> — компьютерно-анимационный музыкальный фэнтезийный фильм 2021 года, снятый студиями «Walt Disney Animation Studios» и «Walt Disney Pictures». ](* <- lang_ru;; => nrel_format: format_html;;*);;
+		-> example:[<b><sc_element sys_idtf="concept_cartoon_encanto">Encanto</sc_element></b> — is a 2021 computer-animated musical fantasy film produced by Walt Disney Animation Studios and Walt Disney Pictures.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-concept_cartoon;
+=>nrel_keyword:{
+	concept_family;
+	concept_magic;
+	concept_friendship;
+	concept_animals
+};;
+
+concept_calendar_date->2021;;
+concept_cartoon_encanto=>nrel_release_date: 2021;;
+2021=>nrel_main_idtf:[2021 год](*<-lang_ru;;*);;
+2021=>nrel_main_idtf:[year of 2021](*<-lang_en;;*);;
+
+concept_cartoon_encanto=>nrel_film_critic_rating: 8;;
+
+Walt_Disney
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Дисней]
+	(* <- lang_ru;; *);
+	[Walt Disney]
+	(* <- lang_en;; *);;
+
+concept_cartoon_encanto=>nrel_film_company:Walt_Disney;;
+
+USA
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[США]
+	(* <- lang_ru;; *);
+	[USA]
+	(* <- lang_en;; *);;
+
+concept_cartoon_encanto=>nrel_take_place:USA;;
+
+You_are_more_than_your_gift
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Ты больше, чем твой дар]
+	(* <- lang_ru;; *);
+	[You are more than your gift]
+	(* <- lang_en;; *);;
+
+concept_cartoon_encanto=>nrel_tagline_of_film:You_are_more_than_your_gift;;
+
+Jared_Bush
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Джаред Буш]
+	(* <- lang_ru;; *);
+	[Jared Bush]
+	(* <- lang_en;; *);;
+
+concept_cartoon_encanto=>nrel_film_director:Jared_Bush;;
+
+Jermaine_Franco
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Джермейн Франко]
+	(* <- lang_ru;; *);
+	[Jermaine Franco]
+	(* <- lang_en;; *);;
+
+concept_cartoon_encanto=>nrel_composer:Jermaine_Franco;;
+
+Kralk_Spencer
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Кралк Спенсер]
+	(* <- lang_ru;; *);
+	[Kralk Spencer]
+	(* <- lang_en;; *);;
+
+concept_cartoon_encanto=>nrel_producer:Kralk_Spencer;;
+
+Ian_Gooding
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Йен Гудинг]
+	(* <- lang_ru;; *);
+	[Ian Gooding]
+	(* <- lang_en;; *);;
+
+concept_cartoon_encanto=>nrel_production_designer:Ian_Gooding;;
+
+LinManuel_Miranda
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Лин-Мануэль Миранда]
+	(* <- lang_ru;; *);
+	[Lin-Manuel Miranda]
+	(* <- lang_en;; *);;
+
+concept_cartoon_encanto=>nrel_soundman:LinManuel_Miranda;;
+

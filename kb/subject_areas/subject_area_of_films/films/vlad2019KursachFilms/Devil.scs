@@ -25,18 +25,6 @@ Devils_Advocate <-rrel_key_sc_element:...
 	*);;
 *);;
 
-Devils_Advocate <-rrel_key_sc_element:...
-(*
-	<-illustration;;
-	=>nrel_main_idtf:
-		[Рис. (Адвокат дъявола)](*<-lang_ru;;*);
-		[Pic. (Devils advocate)](*<-lang_en;;*);;
-	<=nrel_sc_text_translation:...
-	(*
-		->"file://IMG/Devil.jpg"(*=>nrel_format:format_jpg;;*);;
-	*);;
-*);;
-
 Devils_Advocate => nrel_producing_country : Usa;;
 
 concept_calendar_date -> 11_03_1997;;

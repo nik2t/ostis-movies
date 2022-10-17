@@ -4,6 +4,10 @@ concept_sand_animation
 	[песочная анимация](*<-lang_ru;;*);
 	[sand animation](*<-lang_en;;*);
 
+=>nrel_idtf:
+	[песочная мультипликация](*<-lang_ru;;*);
+	[sand animation](*<-lang_en;;*);
+
 <- concept_multianimation;
 <-rrel_key_sc_element:...
 (*

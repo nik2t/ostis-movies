@@ -1,0 +1,40 @@
+concept_film_portal_film.ru
+	<- sc_node_not_relation;
+	<-concept_free_film_portal;
+
+=> nrel_main_idtf:[кинопортал Фильм.ру] (* <- lang_ru;; *);
+=> nrel_idtf:[film portal Film.ru] (* <- lang_en;; *);
+=> nrel_idtf:[Film.ru] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	 <- definition;;
+	=> nrel_main_idtf:
+		[Высказывание (кинопортал Фильм.ру)] (* <- lang_ru;; *);
+		[Statement(film portal Film.ru)](* <- lang_en;; *);; 
+	<= nrel_sc_text_translation:... 
+		(*
+		-> example:[<b><sc_element sys_idtf="concept_film_portal_film.ru">Фильм.ру</sc_element></b> — Всё_о_кино](* <- lang_ru;; => nrel_format: format_html;;*);;
+		-> example:[<b><sc_element sys_idtf="concept_film_portal_film.ru">Film.ru</sc_element></b> — All_about_cinema](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+concept_film_portal_film.ru=>nrel_site:[Film.ru](* <- lang_en;; *);;
+
+Russia
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Россия]
+	(* <- lang_ru;; *);
+	[Russia]
+	(* <- lang_en;; *);;
+
+concept_film_portal_film.ru=>nrel_take_place:Russia;;
+
+concept_calendar_date->2019;;
+concept_film_portal_film.ru=>nrel_foundation_year: 2019;;
+2019=>nrel_main_idtf:[2019 год](*<-lang_ru;;*);;
+2019=>nrel_main_idtf:[year of 2019](*<-lang_en;;*);;
+
+concept_film_portal_film.ru=>nrel_coun_films:200000;;
+

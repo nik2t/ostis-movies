@@ -16,16 +16,4 @@ concept_city <- sc_node_not_relation;
         -> rrel_example: "file://HTML/concept_city_ru.html"(*<- lang_ru;;=>nrel_format:format_html;;*);;
         -> rrel_example: "file://HTML/concept_city_en.html"(*<- lang_en;;=>nrel_format:format_html;;*);;
     *);;
-*);
-
-
--> rrel_key_sc_element: ...(*
-		<- illustration;;
-		=>nrel_main_idtf:
-		    [Рис. (город)](*<-lang_ru;;*);
-		    [Pic. (city)](*<-lang_en;;*);;
-	    <=nrel_sc_text_translation:...
-	    (*
-		->"file://IMG/city.jpg"(*=>nrel_format:format_jpg;;*);;
-	    *);;
 *);;
